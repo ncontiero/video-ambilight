@@ -26,6 +26,6 @@
     "eslint": "9.32.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.2"
   }
 }
