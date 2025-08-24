@@ -15,7 +15,7 @@
     "next": "15.5.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-player": "^2.16.0"
+    "react-player": "^2.16.1"
   },
   "devDependencies": {
     "@ncontiero/eslint-config": "6.1.0",
