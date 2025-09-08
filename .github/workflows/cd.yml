@@ -36,9 +36,8 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          cache: pnpm
           node-version-file: .nvmrc
 
       - name: Install dependencies
