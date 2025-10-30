@@ -8,6 +8,9 @@
   "main": "index.js",
   "scripts": {
     "tailwind": "tailwindcss -i ./styles/input.css -o ./dist/output.css",
+    "build:next": "pnpm -F='nextjs' build",
+    "dev:next": "pnpm -F='nextjs' dev",
+    "start:next": "pnpm -F='nextjs' start",
     "build": "pnpm tailwind --minify",
     "dev": "pnpm tailwind --watch"
   },
