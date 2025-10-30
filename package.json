@@ -7,10 +7,12 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./styles/input.css -o ./dist/output.css -m",
-    "dev": "tailwindcss -i ./styles/input.css -o ./dist/output.css --watch"
+    "tailwind": "tailwindcss -i ./styles/input.css -o ./dist/output.css",
+    "build": "pnpm tailwind --minify",
+    "dev": "pnpm tailwind --watch"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.18"
+    "@tailwindcss/cli": "4.1.16",
+    "tailwindcss": "4.1.16"
   }
 }

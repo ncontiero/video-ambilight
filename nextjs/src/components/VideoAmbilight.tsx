@@ -55,8 +55,8 @@ export function VideoAmbilight({ videoId }: VideoAmbilightProps) {
       <div
         id="ambilight-video"
         className={`
-          pointer-events-none absolute left-0 top-0 z-[-1] size-full shadow-[0_0_120px_rgba(0,0,0,0)] blur-[80px]
-          saturate-[300%]
+          pointer-events-none absolute top-0 left-0 z-[-1] size-full shadow-[0_0_120px_rgba(0,0,0,0)] blur-[80px]
+          saturate-300
         `}
       >
         <ReactPlayer
