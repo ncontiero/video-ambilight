@@ -1,8 +1,7 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
-
-import ReactPlayer from "react-player/youtube";
+import { useEffect, useRef, useState } from "react";
+import ReactPlayer from "react-player";
 
 export type VideoAmbilightProps = {
   readonly videoId: string;
@@ -12,42 +11,29 @@ export function VideoAmbilight({ videoId }: VideoAmbilightProps) {
   const [videoPlaying, setVideoPlaying] = useState(false);
   const [videoCurrentTime, setVideoCurrentTime] = useState(0);
 
-  const videoRef = useRef<ReactPlayer>(null);
-  const ambilightVideoRef = useRef<ReactPlayer>(null);
-
-  const optimizeAmbilight = useCallback((player?: Record<string, any>) => {
-    if (!player || !player.getAvailableQualityLevels) return;
-    const qualityLevels: string[] = [...player.getAvailableQualityLevels()];
-    if (qualityLevels && qualityLevels.length > 0 && qualityLevels.length > 0) {
-      qualityLevels.reverse();
-      const lowestLevel =
-        qualityLevels[qualityLevels.findIndex((q) => q !== "auto")];
-      player.setPlaybackQuality(lowestLevel);
-    }
-  }, []);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const ambilightVideoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    if (ambilightVideoRef.current) {
-      ambilightVideoRef.current.seekTo(videoCurrentTime, "seconds");
-      optimizeAmbilight(ambilightVideoRef.current.getInternalPlayer());
-    }
-  }, [optimizeAmbilight, videoCurrentTime]);
+    if (!ambilightVideoRef.current) return;
+    ambilightVideoRef.current.currentTime = videoCurrentTime;
+  }, [videoCurrentTime]);
 
   return (
     <div className="relative flex size-full justify-center">
       <div id="video" className="aspect-video size-full rounded-lg">
         <ReactPlayer
           ref={videoRef}
-          url={`https://www.youtube.com/watch?v=${videoId}`}
+          src={`https://www.youtube.com/watch?v=${videoId}`}
           width="100%"
           height="100%"
           onPlay={() => {
             setVideoPlaying(true);
-            setVideoCurrentTime(videoRef.current?.getCurrentTime() || 0);
+            setVideoCurrentTime(videoRef.current?.currentTime || 0);
           }}
           onPause={() => {
             setVideoPlaying(false);
-            setVideoCurrentTime(videoRef.current?.getCurrentTime() || 0);
+            setVideoCurrentTime(videoRef.current?.currentTime || 0);
           }}
           controls
         />
@@ -60,13 +46,12 @@ export function VideoAmbilight({ videoId }: VideoAmbilightProps) {
         `}
       >
         <ReactPlayer
-          url={`https://www.youtube.com/watch?v=${videoId}`}
+          src={`https://www.youtube.com/watch?v=${videoId}`}
           muted
           ref={ambilightVideoRef}
           width="100%"
           height="100%"
           playing={videoPlaying}
-          onReady={(player) => optimizeAmbilight(player.getInternalPlayer())}
           controls={false}
         />
       </div>
