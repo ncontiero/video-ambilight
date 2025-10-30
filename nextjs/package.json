@@ -18,7 +18,7 @@
     "react-player": "^2.16.1"
   },
   "devDependencies": {
-    "@ncontiero/eslint-config": "6.2.1",
+    "@ncontiero/eslint-config": "6.4.0",
     "@types/node": "^24.9.1",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",

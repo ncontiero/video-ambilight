@@ -54,7 +54,10 @@ export function VideoAmbilight({ videoId }: VideoAmbilightProps) {
       </div>
       <div
         id="ambilight-video"
-        className="pointer-events-none absolute left-0 top-0 z-[-1] size-full shadow-[0_0_120px_rgba(0,0,0,0)] blur-[80px] saturate-[300%]"
+        className={`
+          pointer-events-none absolute left-0 top-0 z-[-1] size-full shadow-[0_0_120px_rgba(0,0,0,0)] blur-[80px]
+          saturate-[300%]
+        `}
       >
         <ReactPlayer
           url={`https://www.youtube.com/watch?v=${videoId}`}
