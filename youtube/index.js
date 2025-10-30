@@ -1,7 +1,10 @@
+/* global YT */
+
 let video;
 let ambilight;
 const videoId = "_OmLYckdMvI";
 
+// eslint-disable-next-line unused-imports/no-unused-vars
 function onYouTubeIframeAPIReady() {
   video = new YT.Player("video", {
     videoId,
@@ -20,6 +23,7 @@ function onYouTubeIframeAPIReady() {
   });
 }
 
+// eslint-disable-next-line unused-imports/no-unused-vars
 function videoReady(event) {
   // event.target.setPlaybackQuality("default");
 }

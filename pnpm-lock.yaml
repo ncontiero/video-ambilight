@@ -8,9 +8,15 @@ importers:
 
   .:
     devDependencies:
+      '@ncontiero/eslint-config':
+        specifier: 6.4.0
+        version: 6.4.0(@typescript-eslint/utils@8.46.2(eslint@9.38.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.38.0(jiti@2.6.1))(jiti@2.6.1)(tailwindcss@4.1.16)(typescript@5.9.3)
       '@tailwindcss/cli':
         specifier: 4.1.16
         version: 4.1.16
+      eslint:
+        specifier: 9.38.0
+        version: 9.38.0(jiti@2.6.1)
       tailwindcss:
         specifier: 4.1.16
         version: 4.1.16

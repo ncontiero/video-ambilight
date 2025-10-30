@@ -1,4 +1,7 @@
-@import 'tailwindcss';
+@import "tailwindcss" source(none);
+
+@source "../index.html";
+@source "../youtube/index.html";
 
 @theme {
   --font-inter: Inter, sans-serif;
@@ -22,20 +25,22 @@
   }
 }
 
-@layer components {
-  .card-container {
-    @apply mt-6 px-3 w-full md:w-1/2;
-  }
-  .card {
-    @apply border flex flex-col rounded-md wrap-break-word relative sm:min-h-[415px] shadow-md shadow-black/20;
-  }
-  .card-img {
-    @apply align-middle w-full rounded-t-lg;
-  }
-  .card-body {
-    @apply px-4 pt-4 pb-6 flex-auto;
-  }
-  .card-button {
-    @apply p-2 bg-blue-600 rounded-md text-white duration-200 ring-2 ring-transparent ring-offset-1 hover:bg-blue-500 focus:outline-hidden focus:ring-blue-600;
-  }
+@utility card-container {
+  @apply mt-6 px-3 w-full md:w-1/2;
+}
+
+@utility card {
+  @apply border flex flex-col rounded-md wrap-break-word relative sm:min-h-[415px] shadow-md shadow-black/20;
+}
+
+@utility card-img {
+  @apply align-middle w-full rounded-t-lg;
+}
+
+@utility card-body {
+  @apply px-4 pt-4 pb-6 flex-auto;
+}
+
+@utility card-button {
+  @apply p-2 bg-blue-600 rounded-md text-white duration-200 ring-2 ring-transparent ring-offset-1 hover:bg-blue-500 focus:outline-hidden focus:ring-blue-600;
 }

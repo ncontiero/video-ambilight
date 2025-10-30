@@ -12,10 +12,14 @@
     "dev:next": "pnpm -F='nextjs' dev",
     "start:next": "pnpm -F='nextjs' start",
     "build": "pnpm tailwind --minify",
-    "dev": "pnpm tailwind --watch"
+    "dev": "pnpm tailwind --watch",
+    "lint": "eslint . && pnpm -F='nextjs' lint",
+    "lint:fix": "pnpm lint --fix && pnpm -F='nextjs' lint:fix"
   },
   "devDependencies": {
+    "@ncontiero/eslint-config": "6.4.0",
     "@tailwindcss/cli": "4.1.16",
+    "eslint": "9.38.0",
     "tailwindcss": "4.1.16"
   }
 }

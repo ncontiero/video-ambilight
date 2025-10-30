@@ -1,22 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../dist/output.css" />
+    <link href="../dist/output.css" rel="stylesheet" />
     <title>🌈 Ambilight Effect - YouTube Player API</title>
   </head>
-  <body
-    class="w-screen h-screen bg-black overflow-hidden flex items-center justify-center"
-  >
-    <div class="w-full max-w-[720px] mx-auto flex justify-center items-center">
-      <div class="w-full h-full relative">
+  <body class="flex h-screen w-screen items-center justify-center overflow-hidden bg-black">
+    <div class="mx-auto flex w-full max-w-[720px] items-center justify-center">
+      <div class="relative size-full">
         <div
           id="ambilight"
-          class="blur-[80px] opacity-50 saturate-300 left-0 pointer-events-none absolute top-0 scale-[1.2] translate-x-0 translate-y-0 w-full -z-1 h-full shadow-[0px_0px_80px_rgba(0,0,0,0)]"
+          class="
+            pointer-events-none absolute top-0 left-0 -z-1 size-full translate-0 scale-[1.2] opacity-50
+            shadow-[0px_0px_80px_rgba(0,0,0,0)] blur-[80px] saturate-300
+          "
         ></div>
-        <div id="video" class="w-full h-full rounded-lg aspect-video"></div>
+        <div id="video" class="aspect-video size-full rounded-lg"></div>
       </div>
     </div>
 

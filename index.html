@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -14,15 +14,15 @@
     <link href="./dist/output.css" rel="stylesheet" />
     <title>🌈 Ambilight Effect</title>
   </head>
-  <body class="container mx-auto w-full font-inter h-screen">
-    <header class="w-full h-16">
-      <div class="max-w-7xl mx-auto h-full flex items-center justify-between">
+  <body class="font-inter container mx-auto h-screen w-full">
+    <header class="h-16 w-full">
+      <div class="mx-auto flex h-full max-w-7xl items-center justify-between">
         <div class="mx-0.5">
           <a
-            class="github-button"
-            href="https://github.com/ncontiero"
             data-size="large"
+            class="github-button"
             aria-label="Follow @ncontiero on GitHub"
+            href="https://github.com/ncontiero"
           >
             Follow @ncontiero
           </a>
@@ -30,33 +30,33 @@
         <div class="flex items-center justify-between">
           <div class="mx-0.5">
             <a
-              class="github-button"
-              href="https://github.com/ncontiero/video-ambilight/subscription"
               data-icon="octicon-eye"
               data-size="large"
+              class="github-button"
               aria-label="Watch ncontiero/video-ambilight on GitHub"
+              href="https://github.com/ncontiero/video-ambilight/subscription"
             >
               Watch
             </a>
           </div>
           <div class="mx-0.5">
             <a
-              class="github-button"
-              href="https://github.com/ncontiero/video-ambilight"
               data-icon="octicon-star"
               data-size="large"
+              class="github-button"
               aria-label="Star ncontiero/video-ambilight on GitHub"
+              href="https://github.com/ncontiero/video-ambilight"
             >
               Star
             </a>
           </div>
           <div class="mx-0.5">
             <a
-              class="github-button"
-              href="https://github.com/ncontiero/video-ambilight/fork"
               data-icon="octicon-repo-forked"
               data-size="large"
+              class="github-button"
               aria-label="Fork ncontiero/video-ambilight on GitHub"
+              href="https://github.com/ncontiero/video-ambilight/fork"
             >
               Fork
             </a>
@@ -64,32 +64,32 @@
         </div>
         <div class="mx-0.5">
           <a
-            class="github-button"
-            href="https://github.com/ncontiero/video-ambilight/archive/master.zip"
             data-icon="octicon-cloud-download"
             data-size="large"
+            class="github-button"
             aria-label="Download ncontiero/video-ambilight on GitHub"
+            href="https://github.com/ncontiero/video-ambilight/archive/master.zip"
           >
             Download
           </a>
         </div>
       </div>
     </header>
-    <div class="max-w-7xl w-full mx-auto flex flex-wrap my-4 sm:my-8 md:my-10 sm:px-3">
-      <div class="flex flex-col md:flex-row justify-evenly">
+    <div class="mx-auto my-4 flex w-full max-w-7xl flex-wrap sm:my-8 sm:px-3 md:my-10">
+      <div class="flex flex-col justify-evenly md:flex-row">
         <div class="card-container">
           <div class="card">
             <img
               class="card-img"
-              src="./assets/youtube.png"
               alt="Ambilight effect using YouTube iframe Player API"
+              src="./assets/youtube.png"
             />
             <div class="card-body">
-              <h5 class="text-xl mb-2">YouTube Player API</h5>
+              <h5 class="mb-2 text-xl">YouTube Player API</h5>
               <p class="mb-4">
                 Ambilight effect using YouTube iframe Player API
               </p>
-              <a href="./youtube/index.html" class="card-button">See demo</a>
+              <a class="card-button" href="./youtube/index.html">See demo</a>
             </div>
           </div>
         </div>
@@ -97,15 +97,15 @@
           <div class="card">
             <img
               class="card-img"
-              src="./assets/youtube.png"
               alt="Ambilight effect using YouTube iframe Player API"
+              src="./assets/youtube.png"
             />
             <div class="card-body">
-              <h5 class="text-xl mb-2">YouTube Player API + Next.js (React)</h5>
+              <h5 class="mb-2 text-xl">YouTube Player API + Next.js (React)</h5>
               <p class="mb-4">
                 Ambilight effect using YouTube iframe Player API with Next.js
               </p>
-              <a href="https://demo-ambilight.vercel.app/" class="card-button">
+              <a class="card-button" href="https://demo-ambilight.vercel.app/">
                 See demo
               </a>
             </div>
