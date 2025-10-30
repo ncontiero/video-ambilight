@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   title: "🌈 Ambilight Effect - YouTube Player API + Next.js (React)",
@@ -12,9 +12,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} flex h-screen w-screen items-center justify-center overflow-hidden bg-black`}
+        className={`${inter.variable}
+          font-inter flex h-screen w-screen items-center justify-center overflow-hidden bg-black
+        `}
       >
         {children}
       </body>
