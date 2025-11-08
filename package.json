@@ -18,8 +18,8 @@
   },
   "devDependencies": {
     "@ncontiero/eslint-config": "6.4.0",
-    "@tailwindcss/cli": "4.1.16",
+    "@tailwindcss/cli": "4.1.17",
     "eslint": "9.39.1",
-    "tailwindcss": "4.1.16"
+    "tailwindcss": "4.1.17"
   }
 }
