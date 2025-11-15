@@ -34,7 +34,7 @@ importers:
         version: 19.2.0(react@19.2.0)
       react-player:
         specifier: ^3.3.3
-        version: 3.3.3(@types/react-dom@19.2.2(@types/react@19.2.5))(@types/react@19.2.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        version: 3.3.3(@types/react-dom@19.2.3(@types/react@19.2.5))(@types/react@19.2.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
     devDependencies:
       '@ncontiero/eslint-config':
         specifier: 6.4.0
@@ -49,8 +49,8 @@ importers:
         specifier: ^19.2.3
         version: 19.2.5
       '@types/react-dom':
-        specifier: ^19.2.2
-        version: 19.2.2(@types/react@19.2.5)
+        specifier: ^19.2.3
+        version: 19.2.3(@types/react@19.2.5)
       eslint:
         specifier: 9.39.1
         version: 9.39.1(jiti@2.6.1)
@@ -728,8 +728,8 @@ packages:
   '@types/node@24.10.1':
     resolution: {integrity: sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==}
 
-  '@types/react-dom@19.2.2':
-    resolution: {integrity: sha512-9KQPoO6mZCi7jcIStSnlOWn2nEF3mNmyr3rIAsGnAbQKYbRLyqmeSc39EVgtxXVia+LMT8j3knZLAZAh+xLmrw==}
+  '@types/react-dom@19.2.3':
+    resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
     peerDependencies:
       '@types/react': ^19.2.0
 
@@ -3143,7 +3143,7 @@ snapshots:
     dependencies:
       mux-embed: 5.9.0
 
-  '@mux/mux-player-react@3.8.0(@types/react-dom@19.2.2(@types/react@19.2.5))(@types/react@19.2.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@mux/mux-player-react@3.8.0(@types/react-dom@19.2.3(@types/react@19.2.5))(@types/react@19.2.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       '@mux/mux-player': 3.8.0(react@19.2.0)
       '@mux/playback-core': 0.31.2
@@ -3152,7 +3152,7 @@ snapshots:
       react-dom: 19.2.0(react@19.2.0)
     optionalDependencies:
       '@types/react': 19.2.5
-      '@types/react-dom': 19.2.2(@types/react@19.2.5)
+      '@types/react-dom': 19.2.3(@types/react@19.2.5)
 
   '@mux/mux-player@3.8.0(react@19.2.0)':
     dependencies:
@@ -3446,7 +3446,7 @@ snapshots:
     dependencies:
       undici-types: 7.16.0
 
-  '@types/react-dom@19.2.2(@types/react@19.2.5)':
+  '@types/react-dom@19.2.3(@types/react@19.2.5)':
     dependencies:
       '@types/react': 19.2.5
 
@@ -5406,9 +5406,9 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-player@3.3.3(@types/react-dom@19.2.2(@types/react@19.2.5))(@types/react@19.2.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
+  react-player@3.3.3(@types/react-dom@19.2.3(@types/react@19.2.5))(@types/react@19.2.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
-      '@mux/mux-player-react': 3.8.0(@types/react-dom@19.2.2(@types/react@19.2.5))(@types/react@19.2.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+      '@mux/mux-player-react': 3.8.0(@types/react-dom@19.2.3(@types/react@19.2.5))(@types/react@19.2.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@types/react': 19.2.5
       cloudflare-video-element: 1.3.4
       dash-video-element: 0.2.0
