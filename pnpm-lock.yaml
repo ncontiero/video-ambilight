@@ -33,8 +33,8 @@ importers:
         specifier: ^19.2.0
         version: 19.2.0(react@19.2.0)
       react-player:
-        specifier: ^3.3.3
-        version: 3.3.3(@types/react-dom@19.2.3(@types/react@19.2.5))(@types/react@19.2.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        specifier: ^3.4.0
+        version: 3.4.0(@types/react-dom@19.2.3(@types/react@19.2.5))(@types/react@19.2.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
     devDependencies:
       '@ncontiero/eslint-config':
         specifier: 6.4.0
@@ -1107,8 +1107,8 @@ packages:
   damerau-levenshtein@1.0.8:
     resolution: {integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==}
 
-  dash-video-element@0.2.0:
-    resolution: {integrity: sha512-dgmhBOte6JgvSvowvrh0Q/vhSrB52Q/AUl/KqminAUkPuUT3CCUNhto1X8ANigWkmNwhktFc/PCe0lF/4tBFwQ==}
+  dash-video-element@0.3.0:
+    resolution: {integrity: sha512-Pe+BxG153n+CH++3gmWMApVXEUs767YGxsRebdNZRSZdXjbv7OGbsitYbjNMC4QAjCWBvBjIclAYV4hoc7OWSQ==}
 
   dashjs@5.0.3:
     resolution: {integrity: sha512-TXndNnCUjFjF2nYBxDVba+hWRpVkadkQ8flLp7kHkem+5+wZTfRShJCnVkPUosmjS0YPE9fVNLbYPJxHBeQZvA==}
@@ -1633,8 +1633,8 @@ packages:
   hermes-parser@0.25.1:
     resolution: {integrity: sha512-6pEjquH3rqaI6cYAXYPcz9MS4rY6R4ngRgrgfDshRptUZIc3lw0MCIJIGDj9++mfySOuPTHB4nrSW99BCvOPIA==}
 
-  hls-video-element@1.5.8:
-    resolution: {integrity: sha512-DdeX5NzhM2Bj+ls5aaRrzSSnriK+r6lCrDa0YyfviNO4zb10JyAnJHZM214lXBWQghCm+fKmlWW1qpzdNoSAvQ==}
+  hls-video-element@1.5.9:
+    resolution: {integrity: sha512-hDXhSI3IpSSODJF8ecNzDHKP5cqsouOuKDMjoTexyFePKr9KpXVCPAnVrXFTTH8VbOim4xkLtPkVJFt7J1Rs6w==}
 
   hls.js@1.6.13:
     resolution: {integrity: sha512-hNEzjZNHf5bFrUNvdS4/1RjIanuJ6szpWNfTaX5I6WfGynWXGT7K/YQLYtemSvFExzeMdgdE4SsyVLJbd5PcZA==}
@@ -2022,6 +2022,9 @@ packages:
   media-tracks@0.3.3:
     resolution: {integrity: sha512-9P2FuUHnZZ3iji+2RQk7Zkh5AmZTnOG5fODACnjhCVveX1McY3jmCRHofIEI+yTBqplz7LXy48c7fQ3Uigp88w==}
 
+  media-tracks@0.3.4:
+    resolution: {integrity: sha512-5SUElzGMYXA7bcyZBL1YzLTxH9Iyw1AeYNJxzByqbestrrtB0F3wfiWUr7aROpwodO4fwnxOt78Xjb3o3ONNQg==}
+
   merge2@1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
@@ -2338,8 +2341,8 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
-  react-player@3.3.3:
-    resolution: {integrity: sha512-6U2ziVohA3WLdKI/WEQ7v27CIive0TCNIro55lJZka06fjB2kC4lJqBrvddG0yBvTDcn1owiUf2hRNaIzHAjIg==}
+  react-player@3.4.0:
+    resolution: {integrity: sha512-QpQSHXtnMBKjQVNeaCYMtTVcynWQ0DDDhz/FJu1OR9PHLC1Aih94UqNstywzSHbJ6Oc7lI8/7kDDqcIvyTI6zQ==}
     peerDependencies:
       '@types/react': ^17.0.0 || ^18 || ^19
       react: ^17.0.2 || ^18 || ^19
@@ -2601,8 +2604,8 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  twitch-video-element@0.1.4:
-    resolution: {integrity: sha512-SDpZ4f7sZmwHF6XG5PF0KWuP18pH/kNG04MhTcpqJby7Lk/D3TS/lCYd+RSg0rIAAVi1LDgSIo1yJs9kmHlhgw==}
+  twitch-video-element@0.1.5:
+    resolution: {integrity: sha512-3UdWMa5ytWFdpgJAM6XEqqRK/1FvWdJVcKDOw4IHBPt4p52E+4fXT42fBdRZFfoxBPXQNZUDDNHFW8wIopD7Og==}
 
   type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
@@ -2675,8 +2678,8 @@ packages:
       typescript:
         optional: true
 
-  vimeo-video-element@1.6.0:
-    resolution: {integrity: sha512-Vs+WWvd6ph6FtY+DqrVO5OHUUS02An87QydUcCUtAsIiXnYhZl0yiDC0XxWiFluo+S6keG38i4xCaQfS1LgeSg==}
+  vimeo-video-element@1.6.1:
+    resolution: {integrity: sha512-UwDLzhgg98pct1xb6799I1vRDXIzaAX6rs1TG/QOf6y+VrXpTFrI7mYz2gnj9QCtBcGK68f4z64A+MRYRsLJaQ==}
 
   weakmap-polyfill@2.0.4:
     resolution: {integrity: sha512-ZzxBf288iALJseijWelmECm/1x7ZwQn3sMYIkDr2VvZp7r6SEKuT8D0O9Wiq6L9Nl5mazrOMcmiZE/2NCenaxw==}
@@ -2703,8 +2706,8 @@ packages:
     engines: {node: '>= 8'}
     hasBin: true
 
-  wistia-video-element@1.3.4:
-    resolution: {integrity: sha512-2l22oaQe4jUfi3yvsh2m2oCEgvbqTzaSYx6aJnZAvV5hlMUJlyZheFUnaj0JU2wGlHdVGV7xNY+5KpKu+ruLYA==}
+  wistia-video-element@1.3.5:
+    resolution: {integrity: sha512-aIG0xEtclPb9xfklAkOwHFv/BMiH3Ql0yWWKQ1XyUCoSDaF3sOD+JNLmakOChvn2LLUX7FqH/mYb8bXT4ACnMw==}
 
   word-wrap@1.2.5:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
@@ -2726,8 +2729,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  youtube-video-element@1.6.2:
-    resolution: {integrity: sha512-YHDIOAqgRpfl1Ois9HcB8UFtWOxK8KJrV5TXpImj4BKYP1rWT04f/fMM9tQ9SYZlBKukT7NR+9wcI3UpB5BMDQ==}
+  youtube-video-element@1.8.0:
+    resolution: {integrity: sha512-u3M0MgO+KUtVwIyKJXZXXJ0As0k6d5NflOrh1GjyG8NNOp+liW2nFU29hpXeUcxUWbVKhudIYd39hMVeEgCilQ==}
 
   zod-validation-error@4.0.2:
     resolution: {integrity: sha512-Q6/nZLe6jxuU80qb/4uJ4t5v2VEZ44lzQjPDhYJNztRQ4wyWc6VF3D3Kb/fAuPetZQnhS3hnajCf9CsWesghLQ==}
@@ -3833,11 +3836,11 @@ snapshots:
 
   damerau-levenshtein@1.0.8: {}
 
-  dash-video-element@0.2.0:
+  dash-video-element@0.3.0:
     dependencies:
       custom-media-element: 1.4.5
       dashjs: 5.0.3
-      media-tracks: 0.3.3
+      media-tracks: 0.3.4
 
   dashjs@5.0.3:
     dependencies:
@@ -4545,11 +4548,11 @@ snapshots:
     dependencies:
       hermes-estree: 0.25.1
 
-  hls-video-element@1.5.8:
+  hls-video-element@1.5.9:
     dependencies:
       custom-media-element: 1.4.5
       hls.js: 1.6.13
-      media-tracks: 0.3.3
+      media-tracks: 0.3.4
 
   hls.js@1.6.13: {}
 
@@ -4987,6 +4990,8 @@ snapshots:
 
   media-tracks@0.3.3: {}
 
+  media-tracks@0.3.4: {}
+
   merge2@1.4.1: {}
 
   micromark-core-commonmark@2.0.3:
@@ -5406,21 +5411,21 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-player@3.3.3(@types/react-dom@19.2.3(@types/react@19.2.5))(@types/react@19.2.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
+  react-player@3.4.0(@types/react-dom@19.2.3(@types/react@19.2.5))(@types/react@19.2.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0):
     dependencies:
       '@mux/mux-player-react': 3.8.0(@types/react-dom@19.2.3(@types/react@19.2.5))(@types/react@19.2.5)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@types/react': 19.2.5
       cloudflare-video-element: 1.3.4
-      dash-video-element: 0.2.0
-      hls-video-element: 1.5.8
+      dash-video-element: 0.3.0
+      hls-video-element: 1.5.9
       react: 19.2.0
       react-dom: 19.2.0(react@19.2.0)
       spotify-audio-element: 1.0.3
       tiktok-video-element: 0.1.1
-      twitch-video-element: 0.1.4
-      vimeo-video-element: 1.6.0
-      wistia-video-element: 1.3.4
-      youtube-video-element: 1.6.2
+      twitch-video-element: 0.1.5
+      vimeo-video-element: 1.6.1
+      wistia-video-element: 1.3.5
+      youtube-video-element: 1.8.0
     transitivePeerDependencies:
       - '@types/react-dom'
 
@@ -5738,7 +5743,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  twitch-video-element@0.1.4: {}
+  twitch-video-element@0.1.5: {}
 
   type-check@0.4.0:
     dependencies:
@@ -5849,7 +5854,7 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
 
-  vimeo-video-element@1.6.0:
+  vimeo-video-element@1.6.1:
     dependencies:
       '@vimeo/player': 2.29.0
 
@@ -5900,7 +5905,7 @@ snapshots:
     dependencies:
       isexe: 2.0.0
 
-  wistia-video-element@1.3.4:
+  wistia-video-element@1.3.5:
     dependencies:
       super-media-element: 1.4.2
 
@@ -5917,7 +5922,7 @@ snapshots:
 
   yocto-queue@0.1.0: {}
 
-  youtube-video-element@1.6.2: {}
+  youtube-video-element@1.8.0: {}
 
   zod-validation-error@4.0.2(zod@4.1.12):
     dependencies:
