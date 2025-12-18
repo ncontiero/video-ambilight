@@ -17,7 +17,7 @@
     "lint:fix": "pnpm lint --fix && pnpm -F='nextjs' lint:fix"
   },
   "devDependencies": {
-    "@ncontiero/eslint-config": "6.5.1",
+    "@ncontiero/eslint-config": "6.5.2",
     "@tailwindcss/cli": "4.1.18",
     "eslint": "9.39.2",
     "tailwindcss": "4.1.18"
