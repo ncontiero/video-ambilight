@@ -9,7 +9,6 @@
 
     // Module Resolution and Detection
     "moduleDetection": "force",
-    "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "Bundler",
 
