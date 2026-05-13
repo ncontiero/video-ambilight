@@ -1,6 +1,7 @@
 import { ncontiero } from "@ncontiero/eslint-config";
 
 export default ncontiero({
+  ignores: ["nextjs"],
   tailwindcss: {
     cssGlobalPath: "./styles/input.css",
     overrides: {
