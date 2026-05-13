@@ -15,7 +15,7 @@
     "build": "pnpm tailwind --minify",
     "dev": "pnpm tailwind --watch",
     "lint": "eslint . && pnpm -F='nextjs' lint",
-    "lint:fix": "pnpm lint --fix && pnpm -F='nextjs' lint:fix"
+    "lint:fix": "eslint . --fix && pnpm -F='nextjs' lint:fix"
   },
   "devDependencies": {
     "@ncontiero/eslint-config": "8.2.1",
