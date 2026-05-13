@@ -15,7 +15,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable}
-          font-inter flex h-screen w-screen items-center justify-center overflow-hidden bg-black
+          flex h-screen w-screen items-center justify-center overflow-hidden bg-black font-inter
         `}
       >
         {children}

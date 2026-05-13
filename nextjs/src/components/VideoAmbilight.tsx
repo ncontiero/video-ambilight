@@ -1,23 +1,28 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import ReactPlayer from "react-player";
 
-export type VideoAmbilightProps = {
+export interface VideoAmbilightProps {
   readonly videoId: string;
-};
+}
 
 export function VideoAmbilight({ videoId }: VideoAmbilightProps) {
   const [videoPlaying, setVideoPlaying] = useState(false);
-  const [videoCurrentTime, setVideoCurrentTime] = useState(0);
 
   const videoRef = useRef<HTMLVideoElement>(null);
   const ambilightVideoRef = useRef<HTMLVideoElement>(null);
 
-  useEffect(() => {
+  const updateAmbilightCurrentTime = (currentTime?: number) => {
     if (!ambilightVideoRef.current) return;
-    ambilightVideoRef.current.currentTime = videoCurrentTime;
-  }, [videoCurrentTime]);
+    ambilightVideoRef.current.currentTime =
+      currentTime ?? videoRef.current?.currentTime ?? 0;
+  };
+
+  const handlePlayOrPause = (isPlaying: boolean) => {
+    setVideoPlaying(isPlaying);
+    updateAmbilightCurrentTime();
+  };
 
   return (
     <div className="relative flex size-full justify-center">
@@ -27,13 +32,10 @@ export function VideoAmbilight({ videoId }: VideoAmbilightProps) {
           src={`https://www.youtube.com/watch?v=${videoId}`}
           width="100%"
           height="100%"
-          onPlay={() => {
-            setVideoPlaying(true);
-            setVideoCurrentTime(videoRef.current?.currentTime || 0);
-          }}
-          onPause={() => {
-            setVideoPlaying(false);
-            setVideoCurrentTime(videoRef.current?.currentTime || 0);
+          onPlay={() => handlePlayOrPause(true)}
+          onPause={() => handlePlayOrPause(false)}
+          onProgress={({ currentTarget: { currentTime } }) => {
+            updateAmbilightCurrentTime(currentTime);
           }}
           controls
         />
