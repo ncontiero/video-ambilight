@@ -18,7 +18,7 @@
     "react-player": "^3.4.0"
   },
   "devDependencies": {
-    "@ncontiero/eslint-config": "8.2.1",
+    "@ncontiero/eslint-config": "8.2.2",
     "@tailwindcss/postcss": "4.3.0",
     "@types/node": "^25.9.1",
     "@types/react": "^19.2.16",
