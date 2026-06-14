@@ -2,7 +2,7 @@
   "name": "video-ambilight",
   "type": "module",
   "version": "1.0.0",
-  "packageManager": "pnpm@11.5.1",
+  "packageManager": "pnpm@11.5.3",
   "description": "🌈 Ambilight Effect - React - Next.js (YouTube iframe, Video).",
   "author": "Nicolas Contiero <https://github.com/ncontiero>",
   "license": "MIT",
