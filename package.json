@@ -2,7 +2,7 @@
   "name": "video-ambilight",
   "type": "module",
   "version": "1.0.0",
-  "packageManager": "pnpm@11.18.0",
+  "packageManager": "pnpm@11.22.0",
   "description": "🌈 Ambilight Effect - React - Next.js (YouTube iframe, Video).",
   "author": "Nicolas Contiero <https://github.com/ncontiero>",
   "license": "MIT",
@@ -18,9 +18,9 @@
     "lint:fix": "eslint . --fix && pnpm -F='nextjs' lint:fix"
   },
   "devDependencies": {
-    "@ncontiero/eslint-config": "8.4.4",
+    "@ncontiero/eslint-config": "8.4.5",
     "@tailwindcss/cli": "4.3.3",
-    "eslint": "10.8.0",
+    "eslint": "10.8.1",
     "tailwindcss": "4.3.3"
   }
 }
