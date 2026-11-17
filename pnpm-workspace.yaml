@@ -1,3 +1,9 @@
+minimumReleaseAge: 4320
+minimumReleaseAgeExcludePrune: true
+trustPolicy: no-downgrade
+trustPolicyExcludePrune: true
+shellEmulator: true
+
 packages:
   - nextjs
 
@@ -5,5 +11,3 @@ allowBuilds:
   "@parcel/watcher": true
   sharp: true
   unrs-resolver: true
-
-minimumReleaseAge: 4320
